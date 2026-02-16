@@ -13,19 +13,19 @@ import Prose from "../components/Prose.astro";
 >
 	<Hero />
 	<div
-		class="grid place-content-center relative text-black dark:text-white p-20"
+		class="grid place-content-center relative text-black dark:text-white p-5"
 	>
-		{
-			sections.map(
-				(Section) =>
-					Section.content && (
-						<section class="p-5">
-							<Prose>
+		<Prose>
+			{
+				sections.map(
+					(Section) =>
+						Section.content && (
+							<section class="p-5">
 								<Section.content />
-							</Prose>
-						</section>
-					),
-			)
-		}
+							</section>
+						),
+				)
+			}
+		</Prose>
 	</div>
 </Layout>

@@ -1,0 +1,49 @@
+---
+import LogoImage from "./img/Logo.astro";
+import RtoImage from "./img/Rto.astro";
+---
+
+<section class="flex flex-col lg:flex-row items-center justify-center mt-20">
+	<!-- TODO: add the image also here -->
+	<div class="flex flex-col fill-white dark:fill-black">
+		<div class="order-2 lg:order-1">
+			<RtoImage class="w-[400px] lg:w-[450px]" />
+		</div>
+		<div class="order-1 lg:order-2">
+			<LogoImage class="w-[400px] lg:w-[450px]" />
+		</div>
+	</div>
+	<div
+		class="flex flex-col p-4 items-center h-full text-center prose prose-base lg:prose-lg dark:prose-invert gap-6"
+	>
+		<h1>
+			Say <span class="text-[red] stroke-[white]">NO</span> to policies that reduce
+			the home-office benefits!
+		</h1>
+		<!-- TODO: add reference to download files -->
+		<div class="flex items-center gap-6">
+			<a
+				href="/no-mandated-rto.white.tiff"
+				class="border dark:border-white rounded-md px-6 py-2 bg-gray-200 text-black hover:bg-gray-300"
+			>
+				Download<br />(white)
+			</a>
+			<a
+				href="/no-mandated-rto.black.tiff"
+				class="border dark:border-white rounded-md px-6 py-2 bg-stone-900 text-white hover:bg-stone-800"
+			>
+				Download<br />(black)
+			</a>
+		</div>
+		<p class="text-normal lg:text-lg">
+			Download the design and use it (on a T-Shirt, laptop sticker, etc.) to
+			demand a hybrid-solution that works for everyone
+			<br />
+			<span class="text-sm">
+				(Only for non-commercial use - read <a href="#disclaimer">disclaimer</a> for
+				more information)
+			</span>
+		</p>
+		<!-- TODO: add link to disclaimer -->
+	</div>
+</section>
